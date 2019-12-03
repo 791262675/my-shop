@@ -1,4 +1,4 @@
-package com.funtl.my.shop;
+package com.jacob.my.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
