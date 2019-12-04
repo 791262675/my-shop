@@ -1,13 +1,15 @@
 package com.jacob.my.shop.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@RestController
+@Controller
 public class TestController {
 
-    @RequestMapping("/")
-    public String sayHi() {
-        return "hello Spring Boot";
+    @GetMapping("/")
+    public String sayHi(Model model) {
+        model.addAttribute("user", "user");
+        return "index";
     }
 }
